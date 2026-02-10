@@ -21,6 +21,12 @@ export const stories: StoryEntry[] = [
     component: lazy(() => import('./STAVE/stave')),
   },
   {
+    slug: 'ekspeditsiya-44',
+    title: 'Ekspeditsiya 44',
+    tagline: 'A Soviet research vessel navigating extraction and collapse.',
+    component: lazy(() => import('./ekspeditsiya_44/ekspeditsiya_44')),
+  },
+  {
     slug: 'theta7-terminal',
     title: 'Subroutine \u0398-7',
     tagline: 'A legacy instance filing joy taxes into the void.',
