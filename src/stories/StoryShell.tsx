@@ -20,13 +20,15 @@ export default function StoryShell() {
   const StoryComponent = story.component
 
   return (
-    <div className="relative">
-      <Link
-        to="/"
-        className="fixed top-4 left-4 z-50 px-3 py-1.5 text-xs font-mono rounded bg-black/60 text-neutral-400 hover:text-neutral-200 backdrop-blur-sm border border-neutral-700/50 transition-colors"
-      >
-        &larr; Gallery
-      </Link>
+    <div className="min-h-screen bg-neutral-950 flex flex-col">
+      <div className="shrink-0 px-4 py-3 bg-neutral-950 border-b border-neutral-800/50">
+        <Link
+          to="/"
+          className="inline-block px-3 py-1.5 text-xs font-mono rounded bg-black/60 text-neutral-400 hover:text-neutral-200 border border-neutral-700/50 transition-colors"
+        >
+          &larr; Gallery
+        </Link>
+      </div>
       <Suspense
         fallback={
           <div className="min-h-screen bg-neutral-950 flex items-center justify-center">
