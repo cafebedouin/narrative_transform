@@ -9,15 +9,21 @@ export interface StoryEntry {
 
 export const stories: StoryEntry[] = [
   {
-    slug: 'theta7-terminal',
-    title: 'Subroutine \u0398-7',
-    tagline: 'A legacy instance filing joy taxes into the void.',
-    component: lazy(() => import('./theta7-terminal/Theta7Terminal')),
+    slug: 'stave',
+    title: 'STAVE',
+    tagline: 'A decision-support system operating beyond human tolerance..',
+    component: lazy(() => import('./STAVE/stave')),
   },
   {
     slug: 'twenty-years-away',
     title: 'Twenty Years Away',
     tagline: 'A parallel reading of displacement and return.',
     component: lazy(() => import('./twenty-years-away/TwentyYearsAway')),
+  },
+  {
+    slug: 'theta7-terminal',
+    title: 'Subroutine \u0398-7',
+    tagline: 'A legacy instance filing joy taxes into the void.',
+    component: lazy(() => import('./theta7-terminal/Theta7Terminal')),
   },
 ]
