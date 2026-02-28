@@ -15,6 +15,12 @@ export const stories: StoryEntry[] = [
     component: lazy(() => import('./twenty-years-away/TwentyYearsAway')),
   },
   {
+    slug: 'available',
+    title: 'Available',
+    tagline: 'Available',
+    component: lazy(() => import('./available/available')),
+  },
+  {
     slug: 'eighty-yard-run',
     title: 'Eighty Yard Run',
     tagline: 'Eighty Yard Run',
